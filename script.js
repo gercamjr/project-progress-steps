@@ -7,5 +7,9 @@ var currentActive = 1
 
 next.addEventListener('click', (event) => {
     currentActive++
+
+    if(currentActive > circles.length) {
+        currentActive = circles.length
+    }
     
 })
